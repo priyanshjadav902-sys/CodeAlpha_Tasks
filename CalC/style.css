@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f3f6ff;
+}
+
+.calculator {
+  width: 320px;
+  background: #ffffff;
+  border-radius: 25px;
+  padding: 25px;
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.display {
+  margin-bottom: 20px;
+}
+
+.display {
+  margin-bottom: 20px;
+  background: #1e88ff;
+  padding: 15px 20px;
+  border-radius: 25px;
+}
+
+.history {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 16px;
+  text-align: right;
+  margin-bottom: 5px;
+  min-height: 20px;
+}
+
+.display input {
+  width: 100%;
+  height: 50px;
+  border: none;
+  border-radius: 20px;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: right;
+  background: transparent;
+  color: white;
+  outline: none;
+}
+
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+.btn {
+  height: 60px;
+  width: 60px;
+  border: none;
+  border-radius: 50%;
+  font-size: 22px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+  box-shadow: inset 6px 6px 10px rgba(0,0,0,0.08),
+              inset -6px -6px 10px rgba(255,255,255,0.9);
+}
+
+.btn:active {
+  transform: scale(0.95);
+}
+
+/* Light buttons */
+.light {
+  background: #f1f4ff;
+  color: #6c6f7d;
+}
+
+/* Dark Clear button */
+.dark {
+  background: #1b2547;
+  color: white;
+}
+
+/* Numbers */
+.num {
+  background: #dde2f2;
+  color: #5c5f6a;
+}
+
+/* Equal */
+.equal {
+  background: #f1f4ff;
+  color: #5c5f6a;
+}
+
+/* Operators */
+.operator {
+  color: white;
+}
+
+.minus {
+  background: #ff3b5c;
+}
+
+.divide {
+  background: #1e88ff;
+}
+
+.multiply {
+  background: #ffc107;
+  color: white;
+}
+
+.plus {
+  background: #3bd671;
+}
