@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Image Gallery By ORION</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+
+    
+  <header>
+    <h1>Image Gallery</h1>
+    <p>Free Images No Copyright Isuue</p>
+    <p></p>
+  </header>
+
+  <!-- Filter Buttons -->
+  <div class="filters">
+    <button class="filter-btn active" data-category="all">All</button>
+    <button class="filter-btn" data-category="nature">Nature</button>
+    <button class="filter-btn" data-category="city">City</button>
+    <button class="filter-btn" data-category="animals">Animals</button>
+    <button class="filter-btn liked-filter" data-category="liked">❤️ Liked</button>
+  </div>
+
+  <!-- Gallery -->
+  <section class="gallery" id="gallery">
+
+    <div class="image-box" data-category="nature">
+      <img src="https://picsum.photos/id/1015/600/400" alt="Nature 1">
+      <button class="like-btn">♡</button>
+    </div>
+
+    <div class="image-box" data-category="nature">
+      <img src="https://picsum.photos/id/1011/600/400" alt="City 1">
+      <button class="like-btn">♡</button>
+    </div>
+
+    <div class="image-box" data-category="animals">
+      <img src="https://picsum.photos/id/1024/600/400" alt="Animal 1">
+      <button class="like-btn">♡</button>
+    </div>
+
+    <div class="image-box" data-category="nature">
+      <img src="https://picsum.photos/id/1016/600/400" alt="Nature 2">
+      <button class="like-btn">♡</button>
+    </div>
+
+    <div class="image-box" data-category="city">
+      <img src="https://picsum.photos/id/1031/600/400" alt="City 2">
+      <button class="like-btn">♡</button>
+    </div>
+
+    <div class="image-box" data-category="animals">
+      <img src="https://picsum.photos/id/237/600/400" alt="Animal 2">
+      <button class="like-btn">♡</button>
+    </div>
+
+    <div class="image-box" data-category="nature">
+      <img src="https://picsum.photos/id/1021/600/400" alt="Nature 3">
+      <button class="like-btn">♡</button>
+    </div>
+
+    <div class="image-box" data-category="nature">
+      <img src="https://picsum.photos/id/1043/600/400" alt="City 3">
+      <button class="like-btn">♡</button>
+    </div>
+
+    <div class="image-box" data-category="animals">
+      <img src="https://picsum.photos/id/1074/600/400" alt="Animal 3">
+      <button class="like-btn">♡</button>
+    </div>
+
+    <div class="image-box" data-category="city">
+      <img src="https://picsum.photos/id/1060/600/400" alt="City New">
+      <button class="like-btn">♡</button>
+    </div>
+
+  </section>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <span class="close-btn" id="closeBtn">&times;</span>
+
+    <button class="nav-btn prev" id="prevBtn">&#10094;</button>
+    <img id="lightboxImg" src="" alt="Lightbox Image">
+    <button class="nav-btn next" id="nextBtn">&#10095;</button>
+  </div>
+
+  <footer class="footer">
+  <div class="footer-container">
+
+    <div class="footer-section">
+      <h3>Image Gallery</h3>
+      <p>A CodeAlpha Internship Task 1.</p>
+    </div>
+
+    <div class="footer-section">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Liked</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h3>Contact</h3>
+      <p>Email: orionpax.com</p>
+      <p>Phone: +91 0000000000</p>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 Image Gallery | All Rights Reserved</p>
+    <p>Designed by <span>ORION PAX</span></p>
+  </div>
+</footer>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
