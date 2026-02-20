@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Music Player - CodeAlpha</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="player">
+
+    <div class="cover">
+         <img id="coverImage" src="covers/LailaMajnu.jpg" alt="Album Cover">
+    </div>
+
+
+
+    <h2 id="songTitle">Song Title</h2>
+    <p id="songArtist">Artist</p>
+
+    <audio id="audio"></audio>
+
+    <div class="progress-container" id="progressContainer">
+      <div class="progress" id="progress"></div>
+    </div>
+
+    <div class="time">
+      <span id="currentTime">0:00</span>
+      <span id="duration">0:00</span>
+    </div>
+
+    <div class="controls">
+      <button onclick="prevSong()">⏮</button>
+      <button onclick="backward5()">⏪ 5s</button>
+      <button id="playBtn" onclick="playPause()">▶</button>
+      <button onclick="forward5()">5s ⏩</button>
+      <button onclick="nextSong()">⏭</button>
+    </div>
+
+    <div class="volume">
+      <label>🔊</label>
+      <input type="range" id="volumeControl" min="0" max="1" step="0.1" value="1">
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
